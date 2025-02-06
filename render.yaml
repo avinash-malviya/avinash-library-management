@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: library-management-frontend
+    env: static
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: ./frontend/build
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+  - type: web
+    name: library-management-backend
+    env: node
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
