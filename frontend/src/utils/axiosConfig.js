@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create axios instance with base URL
 const instance = axios.create({
-  baseURL: 'http://localhost:5000/api'
+  baseURL: 'https://library-management-system-2axh.onrender.com/api'
 });
 
 // Add a request interceptor

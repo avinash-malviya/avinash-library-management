@@ -127,7 +127,7 @@ const BarcodeGenerator = () => {
                     <Button
                         variant="contained"
                         color="secondary"
-                        startIcon={<GetAppIcon />}
+                        // startIcon={<GetAppIcon />}
                         onClick={downloadBarcode}
                         style={{ marginTop: '1rem' }}
                     >
